@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import './componets/AppBar.css';
+@import './componets/Detail.css';
+@import './componets/ListAllRestaurants.css';
+@import './componets/Skeleton.css';
+@import './componets/formCustomerReview.css';
+@import './componets/loader.css';
+@import './componets/alert-notification-add-customer-review.css';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Skip to content */
+
+.skip-to-content-link {
+    background: grey;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: large;
+    height: 30px;
+    margin-top: 50px;
+    padding: 5px;
+    position: absolute;
+    left: 10px;
+    transform: translateY(-100%);
+    transition: transform 0.3;
+}
+
+.skip-to-content-link:focus {
+    transform: translateY(100%);
+}
+
+/* HERO */
+
+.hero img {
+    display: flex;
+    align-items: center;
+    max-height: 300px;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: green;
+    object-fit: cover;
+}
+
+/* line */
+
+.line {
+    width: 100%;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.draw-line {
+    font-size: 32px;
+    font-weight: lighter;
+}
+
+.draw-line::after {
+    content: '';
+    margin-top: 16px;
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    border-bottom: 1px solid black;
+}
+
+
+/* MAIN CONTENT */
+
+main {
+    padding: 32px;
+    flex: 1;
+}
+
+
+footer {
+    padding: 16px;
+}
+
+footer p {
+    text-align: center;
+    color: rgba(5,84,94,1);
+}

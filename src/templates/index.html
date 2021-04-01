@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Katalog Restoran and PWA">
+    <meta name="theme-color" content="#7cd6ca">
+    <link rel="icon" href="favicon.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+    <title>Katalog Restoran + PWA</title>
+</head>
+<body>
+
+    <a aria-label="skip to content" class="skip-to-content-link" href="#mainContent">Skip to Content</a>
+
+    <header class="app-bar">
+        <div class="app-bar__menu">
+            <button id="hamburgerButton"><i class="material-icons">menu</i></button>
+        </div>
+        <div class="app-bar__brand">
+            <h1>Dilarang Makan</h1>
+        </div>
+        <nav id="navigationDrawer" class="app-bar__navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="/#/favorite">Favorite</a></li>
+                <li><a href="https://andre-maesha-99.web.app/" target="_blank" rel="noreferrer">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="hero">
+        <img 
+            src="./responsive/hero-image_4-large.jpg"
+            srcset="./responsive/hero-image_4-small.jpg 480w, ./responsive/hero-image_4-large.jpg 800w"
+            sizes="(max-width: 600px) 480px, 800px"
+            alt="hero image">
+    </div>
+
+
+    <div class="line">
+        <h1 class="draw-line">The Best Restaurants</h1>
+    </div>
+
+
+    <main id="mainContent"></main>
+
+
+    <footer>
+        <p>Copyright &#169; 2021 - Dilarang Makan</p>
+    </footer>
+</body>
+</html>
